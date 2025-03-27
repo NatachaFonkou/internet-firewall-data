@@ -21,7 +21,8 @@ st.markdown("Cette application permet d'explorer et de visualiser les données d
 # Fonction pour charger les données
 @st.cache_data
 def load_data():
-    data = pd.read_csv("C:/Users/Loic/Desktop/r/s2_moi/info_deci/internet+firewall+data/log2.csv")
+    # data = pd.read_csv("C:/Users/Loic/Desktop/r/s2_moi/info_deci/internet+firewall+data/log2.csv")
+    data = pd.read_csv("log2.csv")
     # Convertir les colonnes numériques si nécessaire
     numeric_cols = [
         'Source Port', 'Destination Port', 'NAT Source Port', 'NAT Destination Port',
